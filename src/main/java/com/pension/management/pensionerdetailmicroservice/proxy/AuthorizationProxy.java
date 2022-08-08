@@ -4,7 +4,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 
-@FeignClient(name="authorization-service",url="${authorization.uri}")
+@FeignClient(name="authorization-service", url="${authorization.uri}")
 public interface AuthorizationProxy {
 
 	@PostMapping("/validate-token")
