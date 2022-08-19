@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -14,7 +15,6 @@ import com.pension.management.pensionerdetailmicroservice.dao.PensionerDetailDao
 import com.pension.management.pensionerdetailmicroservice.exception.AadhaarNumberNotFoundException;
 import com.pension.management.pensionerdetailmicroservice.exception.TokenExpiredException;
 import com.pension.management.pensionerdetailmicroservice.model.PensionerDetail;
-
 
 @RestController
 public class PensionerDetailMicroserviceController {
